@@ -9,4 +9,7 @@ router.post('/add/user',(req,res)=>{
 router.get('/users',(req,res)=>{
     studentController.getStudents(req,res)
 })
+router.get('/user/:rollNo',(req,res)=>{
+    studentController.getStudentsByRollNo(req,res)
+})
 module.exports=router;
